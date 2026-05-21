@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editorial SaaS — Educate, Inform, Build Authority</title>
+  
+  <!-- Typography from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="index.css">
+  
+  <!-- Lucide Icons via CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <!-- Background Ambient Glow -->
+  <div class="ambient-glow"></div>
+  <!-- Header / Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <span class="logo-dot"></span>
+        <span class="logo-text">EDITORIAL.OS</span>
+      </div>
+      <nav class="nav-links">
+        <a href="#" class="active">Product</a>
+        <a href="#">Showcase</a>
+        <a href="#">Pricing</a>
+        <a href="#">Guides</a>
+      </nav>
+      <div class="nav-cta">
+        <button class="btn btn-nav">Start Writing</button>
+      </div>
+    </div>
+  </header>
+  <!-- Interactive Dashboard Tabs (The Navigation for our Hero Showcase) -->
+  <div class="hero-selector-container">
+    <div class="hero-selector">
+      <button class="selector-tab" data-tab="newsletters">
+        <span class="tab-number">01</span>
+        <span class="tab-label">Newsletters</span>
+      </button>
+      <button class="selector-tab active" data-tab="blog">
+        <span class="tab-number">02</span>
+        <span class="tab-label">Blog Articles</span>
+      </button>
+      <button class="selector-tab" data-tab="cases">
+        <span class="tab-number">03</span>
+        <span class="tab-label">Case Studies</span>
+      </button>
+    </div>
+  </div>
+  <!-- Main Showcase Hero Section -->
+  <main class="hero-section">
+    <div class="hero-container">
+      
+      <!-- Left Column: Content -->
+      <div class="hero-content-column">
+        <!-- Eyebrow -->
+        <div class="eyebrow" id="hero-eyebrow">2. BLOG ARTICLES</div>
+        
+        <!-- Animated Content Wrapper -->
+        <div class="content-animate-wrapper">
+          <!-- Heading -->
+          <h1 class="hero-heading" id="hero-heading">
+            Educate. Inform. Build Authority.
+          </h1>
+          
+          <!-- Subheading -->
+          <p class="hero-subheading" id="hero-subheading">
+            In-depth articles that educate your audience, answer their questions, and establish your brand as a trusted resource.
+          </p>
+          <!-- Feature Icons Section -->
+          <div class="features-list" id="features-list">
+            <!-- Feature 1 -->
+            <div class="feature-item">
+              <div class="feature-icon-wrapper">
+                <i data-lucide="book-open" class="feature-icon"></i>
+              </div>
+              <div class="feature-text">
+                <h3 class="feature-title">Share Knowledge</h3>
+                <p class="feature-desc">Deliver valuable insights your audience actually cares about.</p>
+              </div>
+            </div>
+            <!-- Feature 2 -->
+            <div class="feature-item">
+              <div class="feature-icon-wrapper">
+                <i data-lucide="award" class="feature-icon"></i>
+              </div>
+              <div class="feature-text">
+                <h3 class="feature-title">Build Authority</h3>
+                <p class="feature-desc">Position your brand as an expert in your industry.</p>
+              </div>
+            </div>
+            <!-- Feature 3 -->
+            <div class="feature-item">
+              <div class="feature-icon-wrapper">
+                <i data-lucide="trending-up" class="feature-icon"></i>
+              </div>
+              <div class="feature-text">
+                <h3 class="feature-title">Drive Engagement</h3>
+                <p class="feature-desc">Attract, engage, and convert readers into loyal followers.</p>
+              </div>
+            </div>
+          </div>
+          <!-- CTA Buttons -->
+          <div class="cta-group">
+            <button class="btn btn-primary" id="primary-cta">Start Publishing</button>
+            <button class="btn btn-secondary" id="secondary-cta">Explore Templates</button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Right Column: Visual Mockup Showcase -->
+      <div class="hero-visual-column">
+        <div class="visual-container">
+          <!-- Glassmorphism Card Frame -->
+          <div class="mockup-frame">
+            <!-- Workspace Mockup Photo -->
+            <div class="mockup-image-wrapper">
+              <img src="workspace_blog.png" alt="Clean minimalist productivity desk workspace setup with laptop" class="mockup-image" id="mockup-bg-image">
+              <div class="image-overlay"></div>
+            </div>
+            <!-- Floating Dashboard/Editor Preview Card (Glassmorphism + Dark contrast) -->
+            <div class="floating-card" id="floating-preview-card">
+              <div class="card-header">
+                <span class="card-dot"></span>
+                <span class="card-status-text">LIVE PREVIEW</span>
+                <span class="card-badge" id="card-tag">EDITORIAL</span>
+              </div>
+              <div class="card-body">
+                <div class="card-icon-indicator">
+                  <i data-lucide="text-quote" class="indicator-svg" id="indicator-icon"></i>
+                </div>
+                <div class="card-content-text">
+                  <h4 class="card-topic-title" id="card-topic">10 Productivity Tips for Focused Work</h4>
+                  <p class="card-topic-desc" id="card-desc">Provide actionable value that keeps readers coming back.</p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="reading-time">
+                  <i data-lucide="clock" class="footer-icon"></i>
+                  <span id="card-footer-metric">5 min read</span>
+                </div>
+                <div class="preview-arrow">
+                  <i data-lucide="arrow-up-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Live Style Customizer (Sleek floating drawer) -->
+  <div class="customizer-panel-wrapper">
+    <button class="customizer-toggle-btn" id="customizer-toggle">
+      <i data-lucide="sliders" class="toggle-icon"></i>
+      <span>Customize Theme</span>
+    </button>
+    <div class="customizer-card">
+      <div class="customizer-header">
+        <h4>Live Aesthetic Controls</h4>
+        <button class="close-customizer-btn" id="customizer-close">&times;</button>
+      </div>
+      <div class="customizer-option">
+        <label>Primary Background Color</label>
+        <div class="color-picker-group">
+          <button class="color-dot active" data-color="#8fb7b0" style="background-color: #8fb7b0;"></button>
+          <button class="color-dot" data-color="#7a9a95" style="background-color: #7a9a95;"></button>
+          <button class="color-dot" data-color="#6f918a" style="background-color: #6f918a;"></button>
+          <button class="color-dot" data-color="#a4c9c1" style="background-color: #a4c9c1;"></button>
+        </div>
+      </div>
+      <div class="customizer-option">
+        <label>Corner Smoothness (<span id="radius-val">24px</span>)</label>
+        <input type="range" id="radius-slider" min="8" max="40" value="24">
+      </div>
+      <div class="customizer-option">
+        <label>Layout Spacing (<span id="spacing-val">32px</span>)</label>
+        <input type="range" id="spacing-slider" min="16" max="64" value="32">
+      </div>
+    </div>
+  </div>
+  <!-- JavaScript Code -->
+  <script src="index.js"></script>
+</body>
+</html>
